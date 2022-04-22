@@ -1,40 +1,42 @@
-// VERY EASY: Write a function named min that takes two arguments and returns their minimum.
+// TODO:// VERY EASY: Write a function named min that takes two arguments and returns their minimum.
 
-// function min(p1 , p2) {
-//   if (p1 < p2){
-//   console.log (p1)
-//   } else {
-//     console.log (p2)
-//   }
-// };
+function min(p1 , p2) {
+  if (p1 < p2){
+  console.log (p1)
+  } else {
+    console.log (p2)
+  }
+};
 
-// console.log(min(21 , 32));
+min(21 , 32);
 
-// EASY: Create an array of students holding their last name, first name, and age with 3 students. To
+// TODO:// EASY: Create an array of students holding their last name, first name, and age with 3 students. To
 // validate, please log a greeting with the first name, last name and age of the 2nd student. The output
 // should look like "Hello, my name is John Doe and I'm 19 years old." 
 
-// let students = [
-//   {
-//     'fName': 'Justin',
-//     'lName': 'Stokes',
-//     'age': 25
-//   },
-//   {
-//     'fName': 'John',
-//     'lName': 'Doe',
-//     'age': 19
-//   },
-//   {
-//     'fName': 'Billy',
-//     'lName': 'Blanks',
-//     'age': 66
-//   }
-// ];
+let students = [
+  {
+    'fName': 'Justin',
+    'lName': 'Stokes',
+    'age': 25
+  },
+  {
+    'fName': 'John',
+    'lName': 'Doe',
+    'age': 19
+  },
+  {
+    'fName': 'Billy',
+    'lName': 'Blanks',
+    'age': 66
+  }
+];
 
-// console.log(`My name is ${students[1]['fName']} ${students[1]['lName']} and I am ${students[1]['age']} years old.`)
+console.log(`My name is ${students[1]['fName']} ${students[1]['lName']} and I am ${students[1]['age']} years old.`)
+console.log(students);
 
-// MEDIUM: Create a program that accepts a number (1-12) as input and logs to the console that number
+
+// TODO:// MEDIUM: Create a program that accepts a number (1-12) as input and logs to the console that number
 // and its corresponding month. For example: if the user enters the number 3, then it should return the
 // month “March.” Alert the user if they enter an invalid number (e.g. less than 1 or greater than 12).
 
@@ -50,7 +52,7 @@ if (num <= 0 || num > 11 || num % 1 != 0) {
   alert(months[num]);
 };
 
-// HARD: Given the information below for Tom and Jerry.
+// TODO:// HARD: Given the information below for Tom and Jerry.
 // ● Tom - height:  9in mass: 8 g
 // ● Jerry - height: 10in mass: 45 g
 // Compare the BMI (Body Mass Index) of Tom & Jerry using the formula below:
@@ -59,19 +61,16 @@ if (num <= 0 || num > 11 || num % 1 != 0) {
 // variable containing information about whether Tom has a higher BMI than Jerry. Print a string to the
 // console with the variable from step 3 ( e.g. Is Tom’s BMI higher than Jerry’s? false).
 
-// let tHeight = 9;
-// let tMass = 8;
-// let jHeight = 10;
-// let jMass = 45;
+let tHeight = 9;
+let tMass = 8;
+let jHeight = 10;
+let jMass = 45;
 
-// function BMI(p1,p2) {
-//   p1 / Math.pow(p2, 2);
-// };
+function BMI(p1,p2) {
+  p1 / Math.pow(p2, 2);
+};
 
-// let info = Boolean(BMI(tMass, tHeight) > BMI(jMass, jHeight));
+let info = Boolean(BMI(tMass, tHeight) > BMI(jMass, jHeight));
 
-// console.log(`Tom's BMI higher than Jerry's? ${info}`);
-
-
-
+console.log(`Tom's BMI higher than Jerry's? ${info}`);
 
